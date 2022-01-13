@@ -1,0 +1,100 @@
+#number-of-squares {
+    -fx-background-color: rgba(255, 0, 0, 0.1);
+    -fx-background-radius: 0px;
+    -fx-border-color: transparent transparent red transparent;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+}
+
+#number-of-squares:focused {
+-fx-background-color: rgba(0, 255, 0, 0.1);
+    -fx-border-color: transparent transparent green transparent;
+}
+
+.button, .toggle-button {
+    -fx-background-color: rgba(100, 100, 100, 0.1);
+    -fx-background-radius: 0px;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+	-shrink-animate-on-press: true;
+}
+
+.button:hover, .toggle-button:hover {
+	-fx-background-color: rgba(200, 200, 200, 0.3);
+    -fx-cursor: hand;
+}
+
+.button:pressed, .toggle-button:pressed {
+	-fx-text-fill: yellow;
+	-fx-background-color: rgba(200, 200, 200, 0.3);
+    -fx-cursor: hand;
+}
+
+
+.button:disabled, .button:default:disabled, .toggle-button:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+}
+
+#root {
+    -fx-background-color: linear-gradient(to bottom, derive(rgba(31,31,31,1.00), -20%), derive(rgba(50,50,50,1.00), -30%));
+}
+
+.dark-background {
+    -fx-background-color: linear-gradient(to bottom, derive(rgba(31,31,31,1.00), -20%), derive(rgba(50,50,50,1.00), -30%));
+}
+
+.label {
+	-fx-text-fill: white;
+	-fx-fill: white;
+}
+
+.scroll-bar > .thumb {
+    -fx-background-radius: 0;
+	-fx-background-color: rgba(100, 100, 100, 0.3);
+}
+
+.scroll-bar > .thumb:hover {
+    -fx-background-radius: 0;
+	-fx-background-color: rgba(200, 200, 200, 0.5);
+}
+
+.scroll-bar > .track {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar > .track-background {
+    -fx-background-insets: 0;
+}
+
+.scroll-bar > .increment-button,
+.scroll-bar > .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar > .increment-button:hover,
+.scroll-bar > .decrement-button:hover  {
+    -fx-background-color: rgba(200, 200, 200, 0.5);
+}
+
+.scroll-bar {
+	-fx-background-color: transparent;
+}
+
+.scroll-pane {
+	-fx-background: transparent;
+	-fx-background-color: transparent;
+	-fx-background-radius: 0;
+}
+
+.scroll-pane .corner {
+    -fx-background-radius: 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 0 0 0;
+}
